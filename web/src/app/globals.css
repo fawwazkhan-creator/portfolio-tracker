@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-ink: #e7eaf0;
+  --color-muted: #8b93a7;
+  --color-panel: #121826;
+  --color-line: #232b3d;
+  --color-canvas: #0a0e17;
+  --color-gain: #34d399;
+  --color-loss: #f87171;
+  --color-accent: #7c9cff;
+}
+
+body {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
