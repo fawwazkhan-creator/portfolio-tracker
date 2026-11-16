@@ -97,6 +97,8 @@ GitHub Actions runs on every push and pull request:
 
 The [`deploy/`](deploy) folder has the PM2 process file and the Nginx site used for a single-server setup (Ubuntu, PM2, Nginx, Let's Encrypt). The server setup, zero-downtime deploys, backups and health monitoring are covered in my companion repo, [server-deploy-toolkit](https://github.com/fawwazkhan-creator/server-deploy-toolkit).
 
+With the toolkit, set `API_APP=app.main:create_app` and `API_FACTORY=1` in the server's `.env`, because this API is built by an app factory.
+
 Release steps in short:
 
 1. Check out the release into `/srv/portfolio-tracker/releases/<sha>` and link `shared/.env` into `api/.env`.
